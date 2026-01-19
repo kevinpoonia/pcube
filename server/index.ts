@@ -101,8 +101,8 @@ app.use((req, res, next) => {
   // --------------------
   // Server listen
   // --------------------
-  const PORT = Number(process.env.PORT) || 5000;
-  const HOST = process.env.HOST || "127.0.0.1"; // Windows-safe
+  const PORT = Number(process.env.PORT) || 3000;
+  const HOST = process.env.HOST || "0.0.0.0"; // Windows-safe
 
   httpServer.listen(PORT, HOST, () => {
     log(`🚀 Server running at http://${HOST}:${PORT}`);
